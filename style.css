@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: rgb(222, 228, 237) !important;
+  width: 100vw;
+  height: 100vh;
+}
+.containered {
+  display: flex;
+  justify-content: center;
+}
+.box {
+  background-color: rgb(255, 255, 255);
+  width: 70vw;
+  border-radius: 5px;
+  text-align: left;
+  margin-top: 15px;
+  padding-left: 10px;
+}
+.input {
+  width: 70%;
+}
+.box1 {
+  display: flex;
+  width: 100%;
+  margin: 10px;
+}
+.text_box {
+  display: flex;
+  justify-content: flex-start;
+  width: 60%;
+  align-items: center;
+  gap: 1rem;
+}
+.value {
+  display: flex;
+  align-items: center;
+}
+.strike {
+  text-decoration: line-through;
+}
+.un-checked {
+  width: 1rem;
+  height: 1rem;
+}
+.checked {
+  width: 1rem;
+  height: 1rem;
+}
+.pointer{
+    cursor: pointer;
+}
+p{
+    margin-bottom: 0px !important;
+}
