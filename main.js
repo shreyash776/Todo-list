@@ -1,17 +1,9 @@
-/*
-  [
-    {
-      id:2,
-      value:3,
-      isCompeleted:true
-    }
-  ]
- */
+
 
 let todosArr = [];
 let id = 0;
 
-// create todo
+
 function createTodo() {
   let input = document.getElementById("input");
   if (input.value !== "") {
@@ -26,7 +18,7 @@ function createTodo() {
   }
 }
 
-// read array. (display todo)
+
 const displayTodo = () => {
   const todosListDiv = document.getElementById("todosList");
   const completedTodosListDiv = document.getElementById("completedList");
@@ -34,7 +26,7 @@ const displayTodo = () => {
   completedTodosListDiv.innerHTML = ``;
 
   todosArr.forEach((todo) => {
-    console.log(todo);
+  
     if (!todo.isCompleted) {
       todosListDiv.innerHTML += `
     <div class="box1">
@@ -66,7 +58,7 @@ const displayTodo = () => {
   });
 };
 
-// delete todo
+
 const deleteTodo = (index) => {
   todosArr = todosArr.filter((todo) => {
     return todo.id != index;
@@ -79,14 +71,15 @@ const onCheckBoxChange = (id) => {
   selectedTodo.isCompleted = !selectedTodo.isCompleted;
   displayTodo();
 
-  // Update the checkbox state
+ 
+  
   const checkbox = document.getElementById(`check${id}`);
   if (checkbox) {
     checkbox.checked = selectedTodo.isCompleted;
   }
 };
 
-// Update todo
+
 const updateTodo = (index) => {
   const updatedValue = prompt(
     "Edit todo:",
@@ -98,8 +91,10 @@ const updateTodo = (index) => {
       if (todo.id === index) {
         todo.value = updatedValue;
       }
-      //   return todo;
+      return todo;
+    
     });
-    displayTodo();
+    
   }
+  displayTodo();
 };
