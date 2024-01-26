@@ -6,8 +6,8 @@ body {
   background-color: rgb(222, 228, 237) !important;
   width: 100vw;
   height: 100vh;
-  background: rgb(2,0,36);
-background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(116,121,9,1) 100%, rgba(0,212,255,1) 100%);
+  background: rgb(238,174,202);
+background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
 }
 .containered {
   display: flex;
