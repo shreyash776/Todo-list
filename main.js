@@ -1,5 +1,3 @@
-
-
 let todosArr = [];
 let id = 0;
 
@@ -38,11 +36,11 @@ const displayTodo = () => {
       <button onclick='updateTodo(${todo.id})' class="btn btn-primary">Edit</button>
       <button onclick='deleteTodo(${todo.id})'  class="btn btn-danger">Delete</button>
     </div>
-    
   </div>
   <hr>
     `;
-    } else {
+    } 
+    else {
       completedTodosListDiv.innerHTML += `
     <div class="box1">
     <div class="text_box">

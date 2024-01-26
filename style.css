@@ -6,6 +6,8 @@ body {
   background-color: rgb(222, 228, 237) !important;
   width: 100vw;
   height: 100vh;
+  background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(116,121,9,1) 100%, rgba(0,212,255,1) 100%);
 }
 .containered {
   display: flex;
@@ -13,11 +15,12 @@ body {
 }
 .box {
   background-color: rgb(255, 255, 255);
+  padding:30px;
   width: 70vw;
   border-radius: 5px;
   text-align: left;
   margin-top: 15px;
-  padding-left: 10px;
+  /* padding-left: 10px; */
 }
 .input {
   width: 70%;
@@ -26,6 +29,11 @@ body {
   display: flex;
   width: 100%;
   margin: 10px;
+}
+.box h1{
+  text-align: center;
+  font-weight: 700;
+
 }
 .text_box {
   display: flex;
